@@ -1,0 +1,1 @@
+# Eliminar de un ADT pila el valor en la posición media.

@@ -5,7 +5,7 @@
 list_01 = [6,23,4,345,9,1]
 
 #El valor k
-k = 10
+k = 2
 
 # Uso de un set()
 set_ = set()

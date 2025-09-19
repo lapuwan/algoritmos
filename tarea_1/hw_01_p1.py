@@ -2,7 +2,7 @@
 # En este código se permite que un valor sumado por sí mismo sea k
 
 # Arreglo
-list_01 = [5,7,23,4,345]
+list_01 = [4, 1, 4, 7, 9, 10]
 
 # Valor de k
 k = 10
