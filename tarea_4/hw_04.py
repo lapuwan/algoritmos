@@ -10,7 +10,7 @@ def es_palindromo(cadena, n,z):
     elif n == z or n > z:
         return True        
     else:
-        return es_palindromo(cadena, n+1, z-1 )
+        return es_palindromo(cadena, n+1, z-1)
 
 # Fin del Método   
 

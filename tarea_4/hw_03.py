@@ -4,6 +4,8 @@
 
 def eliminar_medio(pila, k):
 
+    if len(pila) <=2:
+        return
     if k == 0:
         pila.pop()
         return
@@ -12,7 +14,7 @@ def eliminar_medio(pila, k):
 
     eliminar_medio(pila, k - 1)
 
-    pila.push(temp)
+    pila.append(temp)
         
 # Fin del Método
 
@@ -20,7 +22,7 @@ def eliminar_medio(pila, k):
 
 
 
-p = [1, 2, 3, 4, 5, 6,7,8,9,10]
+p = [1,1,1,1,1,2,1,1,1,1,1]
 
 size = len(p) // 2
 res = eliminar_medio(p, size)
