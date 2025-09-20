@@ -11,6 +11,7 @@ def cant_dig(numero):
 # Fin del Método   
 
 # Inicio de Pruebas
+
 entero = 123456789 
 res = cant_dig(entero)
 print(res)

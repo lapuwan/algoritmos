@@ -10,6 +10,7 @@ def suma(arr):
 # Fin del Método
 
 # Inicio de Pruebas
+
 numeros = [1,2,3,4,5,6]
 res = suma(numeros)
 print(res)

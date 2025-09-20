@@ -2,9 +2,11 @@
 
 # Inicio del Método
 
-# n es obligatoriamente cero
-# z es el tamaño de la cadena
-def es_palindromo(cadena, n,z):
+def es_palindromo(cadena, n = None,z = None):
+    if n == None:
+        n = 0
+        z = len(cadena)
+        
     if cadena[n] != cadena[z-1]:
         return False
     elif n == z or n > z:
@@ -15,7 +17,7 @@ def es_palindromo(cadena, n,z):
 # Fin del Método   
 
 # Inicio de Pruebas
+
 cade = "reconocer"
-size = len(cade)
-yes_or_no = es_palindromo(cade, 0, size)
+yes_or_no = es_palindromo(cade)
 print(yes_or_no)

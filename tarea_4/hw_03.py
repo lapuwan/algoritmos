@@ -32,22 +32,16 @@ class Pila:
 
 # Inicio del Método
 
-def eliminar_medio_rec(pila, k=None):
-    if k is None:
-        k = pila.size() // 2   # le asignamos valor de la posición del medio a k
+def eliminar_medio(pila, k):
 
-    # caso base (si estamos en el medio, eliminarlo)
     if k == 0:
         pila.pop()
         return
 
-    # guardamos el tope
     temp = pila.pop()
 
-    # llamada recursiva (k va disminuyendo hasta llegar a cero)
-    eliminar_medio_rec(pila, k - 1)
+    eliminar_medio(pila, k - 1)
 
-    # al regresar, volvemos a poner el elemento
     pila.push(temp)
         
 # Fin del Método
@@ -59,5 +53,6 @@ p = Pila()
 for x in [1, 2, 3, 4, 5, 6,7,8,9,10]:
     p.push(x)
 
-res = eliminar_medio_rec(p)
+size = p.size() // 2
+res = eliminar_medio(p, size)
 print(p)
