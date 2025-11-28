@@ -3,7 +3,7 @@ from _02_casco_convexo import convex_hull
 from _03_tres_punteros import max_area_triangle
 
 # PASO 1: ORDENAR LAS COORDENADAS Y ELIMINAR LA COORDENADA -1 -1
-coord_ord = leer_coordenadas("coordenadas.txt")
+coord_ord = leer_coordenadas("punto_4/campo.in")
 #primeros_diez = coord_ord[:10]
 #print(primeros_diez)
 #print(coord_ord)

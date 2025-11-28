@@ -1,4 +1,5 @@
 from _01_leer_coordenadas import leer_coordenadas
+import time
 
 #  FUNCION PARA CALCULAR AREA DE TRIANGULO
 def area_triangulo(p1, p2, p3):
@@ -14,7 +15,7 @@ def area_triangulo(p1, p2, p3):
 
 
 #  LEER ARCHIVO campo.in
-puntos = leer_coordenadas("coordenadas.txt")
+puntos = leer_coordenadas("punto_4/campo.in")
 
 
 n = len(puntos)
@@ -23,7 +24,7 @@ mejor = None
 
 
 #      FUERZA BRUTA O(n³)
-
+inicio = time.time()
 for i in range(n):
     for j in range(i + 1, n):
         for k in range(j + 1, n):
@@ -31,6 +32,8 @@ for i in range(n):
             if area > max_area:
                 max_area = area
                 mejor = (puntos[i], puntos[j], puntos[k])
+
+fin = time.time()
 
 
 #      ESCRIBIR ARCHIVO campo.out
@@ -40,3 +43,4 @@ with open("campo.out", "w") as f:
         for p in mejor:
             f.write(f"{p[0]} {p[1]}\n")
         print("archivo campo.out creado con éxito por fuerza bruta")
+        print("     Tiempo de ejecución:", fin - inicio, "segundos")
