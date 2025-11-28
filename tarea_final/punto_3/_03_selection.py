@@ -16,6 +16,3 @@ def selection_sort(arr):
     return arr
 
 
-# Ejemplo de uso
-#lista = [64, 25, 12, 22, 11]
-#print(selection_sort(lista))

@@ -37,7 +37,3 @@ def merge(left, right):
 
     return resultado
 
-
-# Ejemplo de uso
-#lista = [38, 27, 43, 3, 9, 82, 10]
-#print(merge_sort(lista))

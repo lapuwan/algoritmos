@@ -33,9 +33,8 @@ for i in range(n):
                 mejor = (puntos[i], puntos[j], puntos[k])
 
 
-# -----------------------------------------
 #      ESCRIBIR ARCHIVO campo.out
-# -----------------------------------------
+
 with open("campo.out", "w") as f:
     if mejor is not None:
         for p in mejor:

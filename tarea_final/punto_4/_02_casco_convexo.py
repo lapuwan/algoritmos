@@ -26,22 +26,3 @@ def convex_hull(coords):
     # Concatenar lower + upper
     return lower + upper
 
-
-# EJEMPLO 
-#coords = [
-#    (168, 352),
-#   (850, 804),
-#    (953, 160),
-#    (596, 933),
-#    (575, 65),
-#    (387, 432),
-#    (49, 791),
-#    (426, 360),
-#    (105, 45),
-#    (638, 517),
-#    (-1, -1)
-#]
-
-
-#hull = convex_hull(coords)
-#print("Casco convexo:", hull)

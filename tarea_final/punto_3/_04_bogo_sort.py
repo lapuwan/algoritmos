@@ -14,8 +14,4 @@ def bogo_sort(arr):
     return arr, intentos
 
 
-# Ejemplo de uso
-#lista = [3, 1, 35,2,5,8,4,10,24]
-#resultado, intentos = bogo_sort(lista)
-#print("Lista ordenada:", resultado)
-#print("Intentos necesarios:", intentos)
+

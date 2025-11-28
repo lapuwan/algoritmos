@@ -20,6 +20,4 @@ def bubble_sort(arr):
 
     return arr
 
-# Ejemplo de uso
-#lista = [5, 1, 4, 2, 8]
-#print(bubble_sort(lista))
+
